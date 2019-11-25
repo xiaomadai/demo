@@ -21,7 +21,7 @@ public class LearnController {
 	//自动配置旨在与“启动器”配合使用，但是这两个概念并没有直接联系在一起。您可以在启动程序之外自由选择jar依赖项。Spring Boot仍会尽其所能自动配置您的应用程序。
 	
 	
-	@RequestMapping("/helloWorld")
+	@RequestMapping("/hello")
     String home() {
         return "Hello World!";
     }

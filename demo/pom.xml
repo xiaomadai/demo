@@ -112,6 +112,41 @@
 			<groupId>jakarta.json</groupId>
 			<artifactId>jakarta.json-api</artifactId>
 		</dependency> -->
+
+
+		<!--Starter for using Spring Batch-->
+
+		<!--<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-core</artifactId>
+		</dependency>-->
+
+
+		<!--Starter for using Spring Framework’s caching support-->
+		<!--spring-boot-starter-cache-->
+
+		<!--<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+		</dependency>-->
+
+
+		<!--redis-->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>2.9.0</version>
+		</dependency>
+
 		
 	</dependencies>
 	
@@ -125,6 +160,53 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<!--Starter for using Spring Batch-->
+			<!--<plugin>
+				<groupId>org.basepom.maven</groupId>
+				<artifactId>duplicate-finder-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>duplicate-dependencies</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+						<configuration>
+							<exceptions>
+								<exception>
+									<conflictingDependencies>
+										<dependency>
+											<groupId>xpp3</groupId>
+											<artifactId>xpp3_min</artifactId>
+										</dependency>
+										<dependency>
+											<groupId>xmlpull</groupId>
+											<artifactId>xmlpull</artifactId>
+										</dependency>
+									</conflictingDependencies>
+								</exception>
+							</exceptions>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>-->
+
+			<!--热部署-->
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>2.2.1.RELEASE</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>build-info</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 	</build>
 
