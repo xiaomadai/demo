@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 @RequestMapping(value = {"/api/xmd/demo/v1/DemoController"}, produces = {"application/json;charset=UTF-8"})
 public class DemoController {
+
+	/**
+	 * 使用sts上传代码到远程github账户
+	 */
+	//https://blog.csdn.net/o_darling/article/details/80941173
 	
 	/**
 	 * 测试工程
