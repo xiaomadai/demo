@@ -1,5 +1,6 @@
 package com.xmd.firstBoot.controller;
 
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 @RequestMapping(value = {"/api/xmd/demo/v1/DemoController"}, produces = {"application/json;charset=UTF-8"})
+@Api(tags = {"DemoController"})
 public class DemoController {
 
 	/**

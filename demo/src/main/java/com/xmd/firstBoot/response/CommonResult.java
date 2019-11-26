@@ -14,11 +14,11 @@ public class CommonResult<E> implements Serializable {
     //状态码
     private Integer code;
     //状态：true 成功
-    Boolean state;
+    private Boolean state;
     //执行结果消息提示信息
-    String message;
+    private String message;
 
-    E value;
+    private E value;
 
     public CommonResult(String message) {
         this(true, message, null);
