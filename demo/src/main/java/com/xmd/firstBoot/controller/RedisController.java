@@ -19,10 +19,10 @@ public class RedisController {
     RedisUtil redisUtil;
 
     @RequestMapping("/test")
-    public CommonResult contextLoads() {
+    public CommonResult<String> contextLoads() {
         redisUtil.set("a", "ceshi");
         String s = (String) redisUtil.get("a");
-        return new CommonResult(s);
+        return new CommonResult<String>(s);
     }
 
 
