@@ -1,4 +1,4 @@
-package com.xmd.firstBoot.JavaEightActualCombat.chapterFive.fivePointFive;
+package com.xmd.firstBoot.JavaEightAction.chapterFive.fivePointFive;
 
 import com.xmd.firstBoot.entity.Trader;
 import com.xmd.firstBoot.entity.Transaction;

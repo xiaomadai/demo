@@ -1,5 +1,7 @@
 package com.xmd.firstBoot.entity;
 
+import com.xmd.firstBoot.enums.CaloricLevel;
+
 /**
  * @Author: xx
  * @Description:
@@ -17,6 +19,16 @@ public class Dish {
         this.vegetarian = vegetarian;
         this.calories = calories;
         this.type = type;
+    }
+
+    public CaloricLevel getCaloricLevel(){
+        if (this.getCalories() <= 400) {
+            return CaloricLevel.DIET;
+        }else if (this.getCalories() <= 700) {
+            return CaloricLevel.NORMAL;
+        }else {
+            return CaloricLevel.FAT;
+        }
     }
 
     public String getName() {
