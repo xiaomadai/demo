@@ -7,22 +7,20 @@ import com.xmd.firstBoot.JavaEightAction.interfance.Fruit;
  * @Description:
  * @Date: Created in 10:10 2020/1/3
  */
-public class Apple implements Fruit {
+public class Orange implements Fruit {
 
     private  Double weight;
 
     private String color;
 
-    private String country;
-
-    public Apple() {
+    public Orange() {
     }
 
-    public Apple(Double weight) {
+    public Orange(Double weight) {
         this.weight = weight;
     }
 
-    public Apple(Double weight, String color) {
+    public Orange(Double weight, String color) {
         this.weight = weight;
         this.color = color;
     }
@@ -33,9 +31,5 @@ public class Apple implements Fruit {
 
     public String getColor() {
         return color;
-    }
-
-    public String getCountry() {
-        return country;
     }
 }

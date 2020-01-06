@@ -19,12 +19,13 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<!--置源码编码方式为 UTF -8-->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	
 
 	<dependencies>
-	
+
 		<!-- Core starter, including auto-configuration support, logging and YAML -->
 		
 		<dependency>
@@ -220,8 +221,6 @@
 		</dependency>
 
 		<!--mysql-->
-
-
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
